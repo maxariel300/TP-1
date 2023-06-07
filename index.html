@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Gamer</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+<img width="300px" height="350" src="https://static.wixstatic.com/media/0784b1_13fb7281ba464eab86885284b256795a~mv2.jpeg/v1/fill/w_270,h_270,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6061c4c3-e10c-4d7c-8c8b-5d0a66fc2a56%20.jpeg" alt="">
+<br>
+<h1>El mejor equipo para que puedas jugar</h1>
+
+<div id="contenedor-1"> 
+<p>Cantidad de productos a mostrar</p>
+<select name="cant-productos-mostrar" id="cant-productos-mostrar">
+<option value="1">1</option>    
+<option value="3">3</option>    
+<option value="7">7</option>    
+<option value="10">10</option> 
+</select>
+   
+<p>Cantidad permitida por producto</p>
+<select name="cant-producto-permitida" id="cant-producto-permitida">
+    <option value="1">1</option>
+    <option value="15">15</option>
+    <option value="25">25</option>
+    <option value="50">50</option>
+</select> 
+
+<p>Colores disponibles:</p>
+<select name="select-colores" id="select-colores">
+    <option value="Ninguno">Ninguno</option>
+    <option value="azul-verde">Azul-Verde</option>
+    <option value="marron-negro">Marron-Negro</option>
+    <option value="naranja-amarillo">Naranja-Amarillo</option>
+</select>
+<br>
+<br>
+<button id="boton-generar" onclick="generarCambios()">Aceptar</button>
+</div>
+
+<div id="info-seleccionada">
+</div>
+
+<div id="contenedor-productos"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
